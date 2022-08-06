@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.login {
+  width : 100%;
+  font-size: 1.25em;
+  border: none;
+  padding: 20px;
+  background-color: #cccccc;
+  border-radius: 25px;
+  box-shadow: 10px 5px 5px black;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #797979;
+  color : white;
+}
+
+.input_field {
+  border: 1px solid;
+  padding : 10px;
+  width : 100%;
+  color : black;
+}
+
+.input_field2 {
+  border: 1px solid;
+  padding : 10px;
+  width : 100%;
+  color : black;
+}
+
+h2 {
+  text-align: center;
+}
+
+.button_send:hover {
+  background-color: green;
+}
+
+.header {
+  grid-column: 1 / span 3;
+}
+
+.my_button {
+  grid-column: 2 / 3;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 100px;
+  display:grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width : 100%;
+  height : 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+.signin_box {
+  height : 400px;
+  grid-column: 2 / 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: 50px 50px 50px 75px;
+}
+
+.login_box {
+  height : 400px;
+  grid-column: 2 / 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: 50px 50px 75px;
+}
+
+.joinroom {
+  height : 400px;
+  grid-column: 2 / 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: 50px 50px 75px;
+}
+
+.nbcard {
+  height : auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-gap: 10%;
+}
+
+.nbcardgame {
+  height : auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto 50px;
+  grid-template-rows: auto;
+  grid-gap: 2%;
+}
+
+.valuecard {
+  height : 100px;
+  grid-row: 2 / 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-gap: 2%;
+}
+
+.choosecard {
+  height : 100px;
+  grid-column: 2 / 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: 50px 50px 50px 50px;
+}
+
+.maincard {
+  width : 100%;
+  height : 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.pioche {
+  height : auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto 50px;
+  grid-template-rows: auto auto;
+  grid-gap: 2%;
+}
+
+.hand {
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 0px auto 0px auto;
+  grid-gap: 25px;
+  width: 500px;
+}

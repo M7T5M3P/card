@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.logo {
+    position: absolute;
+    left:0;
+    top:0;
+    border-radius: 8px;
+}
+
+img {
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  grid-row: 1 / span 3;
+  height : 150px;
+}

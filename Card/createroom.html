@@ -1,0 +1,44 @@
+<html> 
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel='stylesheet' href='login.css'>
+    <script src='./jquery.min.js'></script>
+    <script src='./signin.js'></script>
+  </head>
+  <body>
+    <div class="maincard">
+      <div class="header">
+        <a href="index.html"><img class="logo" src="logoMT.png" alt="Card Logo"></a>
+        <h2>Create room</h2>
+      </div>
+      
+      <div class="choosecard">
+            <h4>Jeu de carte :</h4>
+            <div class="nbcard">
+                <label><input type="checkbox" value="">32 cartes</label>
+                <label><input type="checkbox" value="">52 cartes</label>
+            </div>
+            <h4>Nombre de jeu de carte:</h4>
+            <div class="nbcardgame">
+                <label>Entre 1 and 5 :</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5">
+            </div>
+            <h4>Carte souhaité (si jeu de carte non selectionné):</h4>
+            <div class="valuecard">
+                <label>Carte du jeu : <input type="text" id="cardadd" name="quantity" value="1,2,3,4,5,6,7,8,9,10,V,D,R,J"></label>
+                <label>Carte a retirer : <input type="text" id="cardremove" name="quantity"></label>
+            </div>
+            <h4><br>Tableau (pioche):</h4>
+            <div class="pioche">
+                <label for="quantity">Carte visible (0 à 5) :</label>
+                <input type="number" id="quantity" name="quantity" min="0" max="5">
+                <label for="quantity">Carte cachée (0 à 5) :</label>
+                <input type="number" id="quantity" name="quantity" min="0" max="5">
+                <label><input type="checkbox" value="">Carte retournable</label>
+            </div>
+            <button id='create' class='login'>Create room</button>  
+      </div>
+    </div>
+  </body>
+</html>
