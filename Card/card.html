@@ -1,0 +1,15 @@
+<?php
+$path = parse_ini_file("login.ini");
+$servername = $path['servername'];
+?>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel='stylesheet' href='login.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='http://<?php echo $servername ?>/Card/signin.js'></script>
+  </head>
+  <body>
+    <iframe src="index.html" height="100%" width="100%" title="Iframe Example"></iframe>
+  </body>
+</html>

@@ -16,7 +16,7 @@ $result = $conn->query($sql2);
 for (; $row = $result->fetch_assoc();) {
     $str_arr = preg_split ("/\,/", $row['idplayers']); 
     //echo sizeof($str_arr);
-    //print_r($str_arr);
+    print_r($str_arr);
     for ($i = 0; $i < sizeof($str_arr); $i++) {
         echo $str_arr[$i] ." ". $_GET['idplayer'] . "<br>";
         if ($str_arr[$i] == $_GET['idplayer']) {
@@ -30,6 +30,7 @@ if ($here == 0) {
     echo $sql;
     $conn->query($sql);
 }
+$conn->close();
 echo "<br>";
 echo 1;
 ?>

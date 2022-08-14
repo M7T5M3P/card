@@ -14,4 +14,5 @@ $sql2 = "SELECT Username, Logo FROM player WHERE Id='".$_GET['idplayer']."'";
 $result = $conn->query($sql2);
 $output = $result->fetch_assoc();
 echo $output['Username'].",".$output['Logo'];
+$conn->close();
 ?>

@@ -16,9 +16,9 @@ $result = $conn->query($sql);
 
 for (; $output = $result->fetch_assoc();) {
     if ($output['Id'] == $_GET['idroom']) {
-        $conn->close();
         $bool = 1;
     }
 }
+$conn->close();
 echo $bool;
 ?>

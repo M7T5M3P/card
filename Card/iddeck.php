@@ -13,4 +13,5 @@ $sql = "SELECT namedeck FROM room WHERE Id='".$_GET['idroom']."'";
 $result = $conn->query($sql);
 $output = $result->fetch_assoc();
 echo $output['namedeck'];
+$conn->close();
 ?>

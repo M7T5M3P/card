@@ -10,7 +10,7 @@ $conn->close();
 $str_arr = preg_split("/\,/", $output['pioche']);
 $room = new Room($_GET['idroom'], $deck, $_GET['idplayer'], 
                 $_GET['idgame'], intval($output['nbcardsperplayer']), intval($str_arr[0]), 
-                intval($str_arr[1]), intval($str_arr[2]), intval($str_arr[3]),
+                intval($str_arr[2]), intval($str_arr[3]),
                 intval($str_arr[4]), intval($str_arr[5]), intval($str_arr[6]));
-$room->clear_my_tapis();
+echo $room->tapis->display();
 ?>

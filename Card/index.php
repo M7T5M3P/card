@@ -1,32 +1,32 @@
-<?php
-header('Content-Type: text/html; charset=utf-8');
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
-
-$path = parse_ini_file("card.ini");
-$servername = $path['servername'];
-$username = $path['username'];
-$password = $path['password'];
-$dbname = $path['dbname'];
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-echo "
- <html>
- <head>
- <link rel='shortcut icon' href='card.png'/>
- <title>Card</title>
- <link rel='stylesheet' href='card.css'>
- <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
- </head>
- <body>
-";
-echo "</body>";
-echo "</html>";
-$conn->close();
-?>
+<html>
+    <head>
+    <title>Login</title>
+    <link rel="icon" href="logoMT.png">
+    <link rel='stylesheet' href='login.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='http://<?php $path = parse_ini_file("login.ini"); echo $path["servername"]; ?>/Card/signin.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="logo" id="logosite">
+                <a href="index.php"><img src="logoMT.png" alt="Card Logo" height="150" width="150"></a>
+            </div>
+            <div class="header">
+                <h4>Cartes Portable !</h4>
+            </div>
+            <div class="blanc"></div>
+            <!-- <div class="green"></div>
+            <div class="green2"></div> -->
+            <div class="my_buttonindex">
+                <form action="login.php" method="get">
+                    <button id="login" class="loginbutton">Login</button>
+                </form>
+                <form action="signin.php" method="get">
+                    <button id="signin" class="loginbutton">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

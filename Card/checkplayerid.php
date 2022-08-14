@@ -19,5 +19,6 @@ for (; $row = $result->fetch_assoc();) {
         break;
     }
 }
+$conn->close();
 echo $here;
 ?>
